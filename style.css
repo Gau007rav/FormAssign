@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.form-group {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%;
+    padding: 36px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 8px;
+}
+
+/* Budget Section Styling */
+
+
+.parent {
+    width: 90%;
+    margin-top: -4px;
+    padding: 36px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#budget {
+
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    /* Creates two equal-width columns */
+    gap: 15px;
+    /* Adds space between the grid items */
+
+}
+
+.budget-item {
+
+    position: relative;
+
+}
+
+.budget-item input[type="radio"] {
+    margin-right: 10px;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+
+.budget-item label {
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+
+.submit-btn {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+        
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 10px;
+        max-width:375px;
+    }
+    .form h1{
+        max-width: 375px;
+    }
+
+    #budget {
+
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        
+        gap: 20px;
+        
+
+    }
+
+
+}
